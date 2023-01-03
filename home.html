@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NATURE</title>
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+</head>
+<body>
+  <!--Navigation Bar-->
+  <nav class="navbar">
+    <h1 class="logo">NATURE</h1>
+    <ul class="nav-links">
+      <li class="active" id="home"><a href="#">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gal">Gallery</a></li>
+      <li><a href="#exp">Explore</a></li>
+      <li><a href="#">About Us</a></li>
+      <li class="ctn "><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+    
+
+  <header>
+    <div class="header-content">
+      <h2>Beautiful Nature</h2>
+      <div class="line"></div>
+      <h1>Travel and Explore</h1>
+      <div class="button"></div>
+      <a href="#menu" class="btn">Learn More</a>
+    </div>
+  </header>
+
+  <!--Menu section-->
+  <section class="diff" id="menu">
+    <div>
+      <h1>Types of Nature</h1>
+    </div>
+    <div class="row">
+      <div class="col">
+        <img src="./images/background8.jpg">
+        <h4>Forest</h4>
+        <p>A forest is a complex ecological system in which trees are the dominant life-form.</p>
+        <a href="#gal" class="click1">Learn More</a>
+      </div>
+            <div class="col">
+        <img src="./images/background6.jpg"> 
+        <h4>Ocean</h4>
+        <p>The ocean is a continuous body of salt water that covers more than 70 percent of the Earth's surface.</p>
+        <a href="#gal" class="click1">Learn More</a>
+      </div>
+
+      <div class="col">
+        <img src="./images/background10.jpg"> 
+        <h4>Mountain</h4>
+        <p>A mountain is a landform that has some kind of significant prominence or distinction compared to the surrounding land, usually in the shape of a peak.</p>
+        <a href="#gal" class="click1">Learn More</a>
+      </div>
+     
+
+      
+    </div>
+  </section>
+
+
+  <!--Image Gallery-->
+  <section class="gallery" id="gal">
+  <!--<div>
+    <h1>Gallery</h1>
+  </div>-->
+      <img src="./images/background7.jpg" onclick="openFullView(this.src)">
+      <img src="./images/background8.jpg" onclick="openFullView(this.src)">
+       <img src="./images/background13.jpg" onclick="openFullView(this.src)">
+      <img src="./images/background5.jpg" onclick="openFullView(this.src)">
+      <img src="./images/background6.jpg" onclick="openFullView(this.src)">
+       <img src="./images/background14.jpg" onclick="openFullView(this.src)">
+      <img src="./images/background10.jpg" onclick="openFullView(this.src)">
+      <img src="./images/background11.jpg" onclick="openFullView(this.src)">
+
+      <div class="full-view" id="fullViewBox">
+        <img src="./images/background7.jpg" id="fullView">
+        <span onclick="closeFullView()">X</span>
+        
+      </div>
+  </section>
+
+
+  <section class="explore" id="exp">
+    <div class="explore-content">
+      <h1>Explore and Travel the World</h1>
+      <div class="line"></div>
+      <p>"Being one with nature has several advantages for a person's mental, physical, and spiritual health. A nature trip is frequently all that is required to rejuvenate from the exhausting and hectic city life. Aside from that, a nature trip might be just what you need. Spending time in nature can help you reset your logical thinking and calm your mind. "
+      Source: Ecobnb. “The 10 Incredible Benefits of Nature Trips - Ecobnb.” Ecobnb, 10 Jan. 2020, ecobnb.com/blog/2020/01/nature-trips-benefits.
+</p>
+
+      <a href="#home" class="click1">Learn More</a>
+
+    </div>
+    
+  </section>
+
+  <!--<section class="footer">
+    <p>Address|Phone|Email</p>
+    <p>All rights received 2022</p>
+    
+  </section>-->
+<script>
+  
+  var fullViewBox = document.getElementById("fullViewBox");
+  var fullView = document.getElementById("fullView");
+  
+  function openFullView(pic){
+    fullViewBox.style.display = "flex";
+    fullView.src = pic;
+  }
+
+  function closeFullView(){
+    fullViewBox.style.display = "none";
+  }
+</script>
+</body>
+</html>

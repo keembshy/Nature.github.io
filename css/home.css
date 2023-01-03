@@ -1,0 +1,275 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a
+{
+	text-decoration: none;
+}
+ul
+{
+	list-style: none;
+
+}
+.active
+{
+	color: #fff;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+body, html{
+	overflow-x: hidden;
+}
+/*navbar*/
+.navbar{
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	padding: 20px;
+	color: #fff;
+}
+.nav-links{
+	display: flex;
+	align-items: center;
+}
+.nav-links li{
+	margin: 0 30px;
+}
+nav .nav-links a{
+	padding: 1em;
+	font-size: 16px;
+	color: #fff;
+}
+header{
+	width: 100vw;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/background.jpg);
+	background-position: bottom;
+	background-size: cover;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+.header-content{
+	margin-bottom: 200px;
+	color: #264d00;
+	text-align: center;
+}
+.header-content h2{
+	font-size: 5vmin;
+}
+.line{
+	width: 150px;
+	height: 3px;
+	background: #00b300;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+.header-content h1{
+	font-size: 6vmin;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+.button
+{
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.btn
+{
+	border: 1px solid #ccffcc;
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+
+.btn:hover
+{
+	background-color: #ccffcc;
+	color: #000;	
+}
+
+section {
+	/*width: 80%;
+	margin: 80px auto;*/
+	width: 100vw;
+	height: 100vh;
+}
+.title h1{
+	text-align: center;
+	font-size: 5vmin;
+	color: #264d00;
+}
+.row{
+	display: flex;
+	align-items: center;
+	width: 90%;
+	justify-content: space-between;
+}
+.row .col{
+	display: flex;
+	flex-direction: column;
+	align-items:  center;
+}
+.row .col img{
+	margin: 50px;
+	position: relative;
+	top: 20px;
+	right: 10px;
+	left: 10px;
+	width: 90%;
+	height: 90%;
+	column-gap: 30px;
+	column-width: 90%;
+	align-items: center;
+}
+.diff .row{
+	margin-top: 80px;
+}
+.diff h1{
+	position: relative;
+	top: 20px;
+	text-align: center;
+	font-size: 5vmin;
+	color: #264d00;
+}
+h4{
+	font-size: 3vmin;
+	color: #484872;
+	margin: 20px auto;
+}
+p{
+	color: #264d00;
+	padding: 30px 30px;
+
+}
+/*.explore .click1{
+	margin-top: 30px;
+}*/
+
+.click1{
+	border: 1px solid green;
+	padding: 10px 30px;
+	color: black;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+.click1:hover
+{
+	background-color: #ccffcc;
+	color: #000;
+}
+
+.gallery{
+	/*width: 100vw;
+	height: 100vh;*/
+	margin: 80px auto 40px;
+	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 30px;
+
+}
+/*.gallery h1{
+	position: relative;
+	top: 10px;
+	text-align: center;
+	font-size: 4vmin;
+	color: #264d00;
+}*/
+.gallery img{
+	position: relative;
+	top: 50px;
+	width: 100%;
+	cursor: pointer;
+
+}
+.full-view{
+	width: 100%;
+	height: 100vh;
+	background:  rgba(0,0,0,0.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+}
+.full-view img{
+	width: 90%;
+	max-width: 950px;
+}
+.full-view span{
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.explore{
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../images/background2.jpg);
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+.explore-content{
+	width: 60%;
+	padding: 50px;
+	color: whitesmoke;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.explore-content h1{
+	font-size: 5vmin;
+}
+.explore-content .line{
+	margin-bottom: 50px;
+}
+.explore-content p{
+	color: white;
+
+}
+.explore-content .click1{
+	margin-top: 40px;
+}
+/*.footer{
+	width: 100%;
+	min-height: 100px;
+	padding: 20px 80px;
+	margin: 0;
+	background: #94b8b8;
+	text-align: center;
+}
+.footer p{
+	color: #000000;
+	margin: 20px auto;
+}*/
+
+/*Explore*/
+.explore-content{
+	width: 100%;
+}
+/*animation*/
+img{
+	transition: transform .3s ease;
+}
+img:hover{
+	transform: scale(1.1);
+}
