@@ -144,7 +144,7 @@ section {
 	background: #339933;
 }
 .col:nth-child(3){
-	background: #2d862d
+	background: #2d862d;
 }
 .col h2{
 	text-align: center;
@@ -330,10 +330,10 @@ section {
 	transition: 0.6s;
 }
 .colu:nth-child(1){
-	background: #b8b894;
+	background: #339933;
 }
 .colu:nth-child(2){
-	background:#adad85;
+	background: #2d862d;
 }
 .colu h2{
 	text-align: center;
