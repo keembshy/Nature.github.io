@@ -7,36 +7,7 @@ a
 {
 	text-decoration: none;
 }
-ul
-{
-	list-style: none;
 
-}
-.active
-{
-	color: #0d261a;
-	text-decoration: underline;
-	font-weight: bold;
-}
-/*navbar*/
-.navbar{
-
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
-	padding: 20px;
-	color: #fff;
-}
-.nav-links{
-	display: flex;
-	align-items: center;
-}
-.nav-links li{
-	margin: 0 30px;
-}
 
 header{
 	width: 100vw;
@@ -89,13 +60,5 @@ header{
 {
 	background-color: #ccffcc;
 	color: #000;	
-}
-.menu-btn{
-	position: absolute;
-	top: 30px;
-	right: 30px;
-	width: 40px;
-	cursor: pointer;
-	display: none;
 }
 
