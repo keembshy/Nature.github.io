@@ -16,8 +16,7 @@
       <li><a href="#menu">Menu</a></li>
       <li><a href="#gal">Gallery</a></li>
       <li><a href="#exp">Explore</a></li>
-      <li><a href="#">About Us</a></li>
-      <li class="ctn "><a href="#">Contact Us</a></li>
+      <li><a href="#about">About Us</a></li>
     </ul>
   </nav>
     
@@ -27,7 +26,7 @@
       <h2>Beautiful Nature</h2>
       <div class="line"></div>
       <h1>Travel and Explore</h1>
-      <div class="button"></div>
+      <div class="btl"></div>
       <a href="#menu" class="btn">Learn More</a>
     </div>
   </header>
@@ -38,37 +37,40 @@
       <h1>Types of Nature</h1>
     </div>
     <div class="row">
-      <div class="col">
-        <img src="./images/background8.jpg">
-        <h4>Forest</h4>
-        <p>A forest is a complex ecological system in which trees are the dominant life-form.</p>
-        <a href="#gal" class="click1">Learn More</a>
-      </div>
             <div class="col">
-        <img src="./images/background6.jpg"> 
-        <h4>Ocean</h4>
-        <p>The ocean is a continuous body of salt water that covers more than 70 percent of the Earth's surface.</p>
-        <a href="#gal" class="click1">Learn More</a>
-      </div>
-
-      <div class="col">
-        <img src="./images/background10.jpg"> 
-        <h4>Mountain</h4>
-        <p>A mountain is a landform that has some kind of significant prominence or distinction compared to the surrounding land, usually in the shape of a peak.</p>
-        <a href="#gal" class="click1">Learn More</a>
-      </div>
-     
-
-      
+              <h2>FOREST</h2>
+              <div class="cap">
+            <p>A forest is a complex ecological system in which trees are the dominant life-form.</p>
+           <a href="#gal"> <button type="button">Learn More</button></a>
+              </div>
+                <img src="./images/background8.jpg">
+              </div>
+             <div class="col">
+              <h2>OCEAN</h2>
+              <div class="cap">
+            <p>The ocean is a continuous body of salt water that covers more than 70 percent of the Earth's surface.</p>
+           <a href="#gal"> <button type="button">Learn More</button> </a>
+          </div>
+              <img src="./images/background6.jpg">
+            </div>
+             <div class="col">
+              <h2>MOUNTAIN</h2>
+              <div class="cap">
+            <p>A mountain is a landform that has some kind of significant prominence or distinction compared to the surrounding land, usually in the shape of a peak.</p>
+           <a href="#gal"> <button type="button">Learn More</button></a>
+          </div>
+          <img src="./images/background10.jpg">
+            </div>
+    
     </div>
   </section>
 
 
   <!--Image Gallery-->
-  <section class="gallery" id="gal">
-  <!--<div>
+ <section class="gallery" id="gal">
+  <div>
     <h1>Gallery</h1>
-  </div>-->
+  </div>
       <img src="./images/background7.jpg" onclick="openFullView(this.src)">
       <img src="./images/background8.jpg" onclick="openFullView(this.src)">
        <img src="./images/background13.jpg" onclick="openFullView(this.src)">
@@ -77,6 +79,9 @@
        <img src="./images/background14.jpg" onclick="openFullView(this.src)">
       <img src="./images/background10.jpg" onclick="openFullView(this.src)">
       <img src="./images/background11.jpg" onclick="openFullView(this.src)">
+      <img src="./images/background2.jpg" onclick="openFullView(this.src)">
+      <img src="./images/background12.jpg" onclick="openFullView(this.src)">
+      <img src="./images/background4.jpg" onclick="openFullView(this.src)">
 
       <div class="full-view" id="fullViewBox">
         <img src="./images/background7.jpg" id="fullView">
@@ -100,11 +105,31 @@
     
   </section>
 
-  <!--<section class="footer">
-    <p>Address|Phone|Email</p>
-    <p>All rights received 2022</p>
-    
-  </section>-->
+
+<!--About Us Section-->
+  <section class="about" id="about">
+    <div class="team">
+      <h1>About Our Team</h1>
+      <div class="container">
+        <div class="colu">
+          <h2>Kristine</h2>
+          <div class="caption">
+            <p>Kristine Mae Hernandez is a first year student taking up Bachelor of Science in Information Technology, under the College of Arts and Sciences at Samar State University.</p>
+          </div>
+          <img src="./images/pic1.png">
+        </div>
+         <div class="colu">
+          <h2>Shammel</h2>
+           <div class="caption">
+            <p>Shammel Quilapio is a first year student taking up Bachelor of Science in Information Technology, under the College of Arts and Sciences at Samar State University.</p>
+        </div>
+        <img src="./images/pic2.png">
+      </div>
+      
+    </div>
+
+  </section>
+
 <script>
   
   var fullViewBox = document.getElementById("fullViewBox");
@@ -119,5 +144,6 @@
     fullViewBox.style.display = "none";
   }
 </script>
+
 </body>
 </html>
